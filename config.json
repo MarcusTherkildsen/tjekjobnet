@@ -1,0 +1,13 @@
+{
+  "jobnet": {
+    "name": "jobnet username",
+    "password": "jobnet password"
+  },
+  "mail": {
+  	"sender" : "senders mail",
+  	"sender password" : "senders mail password",
+  	"receiver" : "mail address to send the message to",
+  	"server" : "mail server address (e.g. asmtp.something.com)",
+  	"port" : mail server port (as a number so no quotes "")
+  }
+}

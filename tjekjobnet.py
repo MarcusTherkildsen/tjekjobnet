@@ -23,7 +23,7 @@ sudo pip install selenium
 Also get PhantomJS from here https://github.com/spfaffly/phantomjs-linux-armv6l
 and follow the instructions
 
-Remember full path to phantomjs when putting into crontab -e
+Remember full path to phantomjs as well as to the config file when putting into crontab -e
 Like so: executable_path='/home/pi/jobnet/phantomjs'
 """
 
@@ -104,7 +104,7 @@ def send_mail(message, log_pass):
 if __name__ == '__main__':
 
     # Load credentials (json file is implicitly closed automatically)
-    with open('config.json') as json_data:
+    with open('/home/pi/jobnet/config.json') as json_data:
         log_pass = json.load(json_data)
 
     try:
